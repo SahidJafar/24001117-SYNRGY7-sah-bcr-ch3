@@ -7,7 +7,20 @@ function sortCarByYearDescendingly(cars) {
   const result = [...cars];
 
   // Tulis code-mu disini
-
   // Rubah code ini dengan array hasil sorting secara descending
+
+  // Menggunakan Sort
+  // result.sort((firstItem, secondItem) => secondItem.year - firstItem.year);
+
+  for(let i = 0; i < result.length - 1; i++){
+    for(let j = 0; j < result.length - 1 - i; j++){
+      // Mengecek kondisi tahun sekarang lebih kecil dari tahun setelahnya
+      if(result[j].year < result[j+1].year){
+        let temp = result[j];
+        result[j] = result[j + 1];
+        result[j + 1] = temp;
+      }
+    }
+  }
   return result;
 }
