@@ -6,7 +6,10 @@ function filterCarByAvailability(cars) {
   const result = [];
 
   // Tulis code-mu disini
-
   // Rubah code ini dengan array hasil filter berdasarkan availablity
+  cars.forEach((car) => {
+    (car.available === true) ? result.push(car) : null;
+  });
+
   return result;
 }
