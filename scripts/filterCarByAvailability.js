@@ -22,6 +22,16 @@ function filterCarByAvailability(cars) {
   //   }
   // }
 
+  // Menggunakan panjang lengthnya
+  // cars.forEach((row, i) => {
+  //   if(row.available) result[result.length] = row
+  // });
+
+  // Menggunakan Spread Operator
+  // cars.forEach((row, i) => {
+  //   if(row.available) result = [...result, row]
+  // });
+
   console.log(result);
   return result;
 }
