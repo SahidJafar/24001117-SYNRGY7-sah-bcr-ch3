@@ -12,6 +12,7 @@ function sortCarByYearDescendingly(cars) {
   // Menggunakan Sort
   // result.sort((firstItem, secondItem) => secondItem.year - firstItem.year);
 
+  // Menggunakan bubble sort
   for(let i = 0; i < result.length - 1; i++){
     for(let j = 0; j < result.length - 1 - i; j++){
       // Mengecek kondisi tahun sekarang lebih kecil dari tahun setelahnya
@@ -22,5 +23,6 @@ function sortCarByYearDescendingly(cars) {
       }
     }
   }
+   console.log(result);
   return result;
 }
